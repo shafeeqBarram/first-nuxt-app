@@ -11,6 +11,7 @@
 import axios from 'axios'
 export default {
   head(){
+    
     return{
       title:"Welcome to our first nuxt app"
     }
