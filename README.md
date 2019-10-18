@@ -1,6 +1,6 @@
-# first-nuxt-app
+# new_nuxt_app
 
-> My flawless Nuxt.js project
+> My astonishing Nuxt.js project
 
 ## Build Setup
 

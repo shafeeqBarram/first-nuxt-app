@@ -1,12 +1,9 @@
 
-export default {
+module.exports = {
   mode: 'universal',
   /*
   ** Headers of the page
   */
- generate: {
-  fallback: true
-},
   head: {
     title: process.env.npm_package_name || '',
     meta: [
@@ -41,7 +38,28 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-  ],
+    // Doc: https://bootstrap-vue.js.org
+    'bootstrap-vue/nuxt',
+    // Doc: https://axios.nuxtjs.org/usage
+    '@nuxtjs/axios',
+[    'nuxt-i18n', {
+  detectBrowserLanguage: false
+}]
+
+],
+  i18n: {
+    locales: ['en', 'de'],
+    vueI18n: {
+      fallbackLocale: 'de',
+    },
+      rootRedirect: 'de'
+  },
+  /*
+  ** Axios module configuration
+  ** See https://axios.nuxtjs.org/options
+  */
+  axios: {
+  },
   /*
   ** Build configuration
   */
