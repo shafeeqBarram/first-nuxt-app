@@ -69,5 +69,8 @@ module.exports = {
     */
     extend (config, ctx) {
     }
+  },
+  generate: { // Netlify
+  fallback: true
   }
 }
